@@ -1,5 +1,6 @@
 async function handleTransfer(event) {
     event.preventDefault(); // Prevent form submission
+    console.log("Transfer button clicked!"); // Debugging check
 
     // Get form values
     const amountInGBP = parseFloat(document.getElementById('transfer-amount').value).toFixed(2); // Ensures amount is in two decimal places
